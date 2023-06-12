@@ -7,6 +7,8 @@ let cat_1 = document.getElementsByClassName("cat_1");
 let cat_2 = document.getElementsByClassName("cat_2");
 let cat_3 = document.getElementsByClassName("cat_3");
 
+let name_section = document.getElementById("name_section");
+
 btn_cat1.addEventListener("click", () => {
     for (let i = 0; i < cat_1.length; i++) {
         cat_1[i].classList.remove("cat_hidden");
@@ -19,6 +21,8 @@ btn_cat1.addEventListener("click", () => {
     for (let i = 0; i < cat_3.length; i++) {
         cat_3[i].classList.add("cat_hidden");
     }
+
+    name_section.innerText = "Cat_1";
 });
 
 btn_cat2.addEventListener("click", () => {
@@ -33,6 +37,8 @@ btn_cat2.addEventListener("click", () => {
     for (let i = 0; i < cat_3.length; i++) {
         cat_3[i].classList.add("cat_hidden");
     }
+
+    name_section.innerText = "Cat_2";
 });
 
 btn_cat3.addEventListener("click", () => {
@@ -47,6 +53,8 @@ btn_cat3.addEventListener("click", () => {
     for (let i = 0; i < cat_1.length; i++) {
         cat_1[i].classList.add("cat_hidden");
     }
+
+    name_section.innerText = "Cat_3";
 });
 
 btn_all.addEventListener("click", () => {
@@ -61,4 +69,6 @@ btn_all.addEventListener("click", () => {
     for (let i = 0; i < cat_3.length; i++) {
         cat_3[i].classList.remove("cat_hidden");
     }
+
+    name_section.innerText = "ALL";
 });

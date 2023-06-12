@@ -62,10 +62,11 @@ body {
         width: 100%;
         height: 80%;
         @include centrer(space-around, row);
+        align-items: end;
 
         & aside {
             width: 10%;
-            height: 90%;
+            height: 77%;
             @include centrer(space-around, column);
             border: 1px solid black;
 
@@ -79,22 +80,32 @@ body {
         }
 
         & section {
-            width: 80%;
+            width: 50%;
             height: 90%;
             @include centrer(space-between, column);
 
+            & h2 {
+                width: 100%;
+                text-align: end;
+            }
+
             & div {
                 width: 100%;
-                @include centrer(space-around, row);
+                @include centrer(space-between, row);
 
                 & article {
                     width: 15%;
                     height: 100%;
-                    @include centrer();
+                    @include centrer(space-between, column);
                     border: 1px solid black;
                     
                     & img {
-                        width: 45%;
+                        width: 70%;
+                    }
+
+                    & h3 {
+                        width: 100%;
+                        text-align: center;
                     }
                 }
 
